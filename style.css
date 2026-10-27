@@ -1,0 +1,55 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.secao-eventos h2 {
+  font-family: sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* O Container Pai (coloca os cards lado a lado) */
+.grid-cards {
+  display: flex;             /* Alinha os itens em linha */
+  gap: 20px;                 /* Espaço entre as caixinhas */
+  flex-wrap: wrap;           /* Permite ir para a linha de baixo se a tela for menor */
+}
+
+/* A Caixinha (Card) */
+.card {
+  flex: 1;                   /* Faz todas as caixinhas terem a mesma largura */
+  min-width: 250px;          /* Largura mínima para telas menores */
+}
+
+/* A Imagem do Card */
+.card img {
+  width: 100%;
+  height: 180px;             /* Altura padrão da imagem */
+  object-fit: cover;         /* Ajusta a imagem sem distorcer */
+  border-radius: 12px;       /* Bordas arredondadas igual da foto */
+}
+
+/* O Conteúdo das Informações */
+.card-conteudo h3 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #222;
+  margin: 10px 0 5px 0;
+}
+
+.card-conteudo .local {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #777;               /* Texto cinza para o local */
+  margin: 0 0 5px 0;
+}
+
+.card-conteudo .data {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #444;               /* Texto um pouco mais escuro para a data */
+  margin: 0;
+}
